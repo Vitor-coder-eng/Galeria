@@ -1,0 +1,86 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #9b9a9a;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #444;
+    color: #fff;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+button {
+    background-color: #7f7e80;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+}
+
+
+/* Galeria */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estações Temáticas */
+[data-season="inverno"] {
+    background-color: #076bbd;
+}
+
+[data-season="outono"] {
+    background-color: #ac5c00;
+}
+
+[data-season="primavera"] {
+    background-color: #1e5f3c;
+}
+
+[data-season="verao"] {
+    background-color: #cc3000;
+}
+
